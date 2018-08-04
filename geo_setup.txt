@@ -1,0 +1,192 @@
+$ source activate PythonData
+(PythonData)
+patti@DESKTOP-H1UNS1E MINGW64 ~ (master)
+$ pip install gmaps
+Collecting gmaps
+  Downloading https://files.pythonhosted.org/packages/38/6d/351fb2605ad757d296308be7714000b14599425ebeb6482d3cfcd2690a3f/gmaps-0.8.0                                                                                                                                           .tar.gz (1.1MB)
+Requirement already satisfied: ipython>=5.3.0 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from gm                                                                                                                                           aps) (6.4.0)
+Requirement already satisfied: ipywidgets>=7.0.0 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from                                                                                                                                            gmaps) (7.2.1)
+Requirement already satisfied: traitlets>=4.3.0 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from                                                                                                                                            gmaps) (4.3.2)
+Collecting geojson>=2.0.0 (from gmaps)
+  Downloading https://files.pythonhosted.org/packages/8d/39/231105abbfd2332f108cdbfe736e56324949fa9e80e536ae60a082cf96a9/geojson-2.4                                                                                                                                           .0-py2.py3-none-any.whl
+Requirement already satisfied: six in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from gmaps) (1.11.                                                                                                                                           0)
+Requirement already satisfied: colorama; sys_platform == "win32" in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\sit                                                                                                                                           e-packages (from ipython>=5.3.0->gmaps) (0.3.9)
+Requirement already satisfied: backcall in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from ipython>                                                                                                                                           =5.3.0->gmaps) (0.1.0)
+Requirement already satisfied: setuptools>=18.5 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from                                                                                                                                            ipython>=5.3.0->gmaps) (39.1.0)
+Requirement already satisfied: decorator in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from ipython                                                                                                                                           >=5.3.0->gmaps) (4.3.0)
+Requirement already satisfied: jedi>=0.10 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from ipytho                                                                                                                                           n>=5.3.0->gmaps) (0.12.0)
+Requirement already satisfied: simplegeneric>0.8 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from                                                                                                                                            ipython>=5.3.0->gmaps) (0.8.1)
+Requirement already satisfied: pygments in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from ipython>                                                                                                                                           =5.3.0->gmaps) (2.2.0)
+Requirement already satisfied: prompt-toolkit<2.0.0,>=1.0.15 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-pa                                                                                                                                           ckages (from ipython>=5.3.0->gmaps) (1.0.15)
+Requirement already satisfied: pickleshare in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from ipyth                                                                                                                                           on>=5.3.0->gmaps) (0.7.4)
+Requirement already satisfied: ipykernel>=4.5.1 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from                                                                                                                                            ipywidgets>=7.0.0->gmaps) (4.8.2)
+Requirement already satisfied: nbformat>=4.2.0 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from i                                                                                                                                           pywidgets>=7.0.0->gmaps) (4.4.0)
+Requirement already satisfied: widgetsnbextension~=3.2.0 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packag                                                                                                                                           es (from ipywidgets>=7.0.0->gmaps) (3.2.1)
+Requirement already satisfied: ipython_genutils in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from                                                                                                                                            traitlets>=4.3.0->gmaps) (0.2.0)
+Requirement already satisfied: parso>=0.2.0 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from jedi                                                                                                                                           >=0.10->ipython>=5.3.0->gmaps) (0.2.0)
+Requirement already satisfied: wcwidth in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from prompt-to                                                                                                                                           olkit<2.0.0,>=1.0.15->ipython>=5.3.0->gmaps) (0.1.7)
+Requirement already satisfied: jupyter_client in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from ip                                                                                                                                           ykernel>=4.5.1->ipywidgets>=7.0.0->gmaps) (5.2.3)
+Requirement already satisfied: tornado>=4.0 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from ipyk                                                                                                                                           ernel>=4.5.1->ipywidgets>=7.0.0->gmaps) (5.0.2)
+Requirement already satisfied: jsonschema!=2.5.0,>=2.4 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages                                                                                                                                            (from nbformat>=4.2.0->ipywidgets>=7.0.0->gmaps) (2.6.0)
+Requirement already satisfied: jupyter_core in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from nbfo                                                                                                                                           rmat>=4.2.0->ipywidgets>=7.0.0->gmaps) (4.4.0)
+Requirement already satisfied: notebook>=4.4.1 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from w                                                                                                                                           idgetsnbextension~=3.2.0->ipywidgets>=7.0.0->gmaps) (5.5.0)
+Requirement already satisfied: pyzmq>=13 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from jupyter                                                                                                                                           _client->ipykernel>=4.5.1->ipywidgets>=7.0.0->gmaps) (17.0.0)
+Requirement already satisfied: python-dateutil>=2.1 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (f                                                                                                                                           rom jupyter_client->ipykernel>=4.5.1->ipywidgets>=7.0.0->gmaps) (2.7.3)
+Requirement already satisfied: jinja2 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from notebook>=                                                                                                                                           4.4.1->widgetsnbextension~=3.2.0->ipywidgets>=7.0.0->gmaps) (2.10)
+Requirement already satisfied: Send2Trash in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from notebo                                                                                                                                           ok>=4.4.1->widgetsnbextension~=3.2.0->ipywidgets>=7.0.0->gmaps) (1.5.0)
+Requirement already satisfied: nbconvert in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from noteboo                                                                                                                                           k>=4.4.1->widgetsnbextension~=3.2.0->ipywidgets>=7.0.0->gmaps) (5.3.1)
+Requirement already satisfied: terminado>=0.8.1 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from                                                                                                                                            notebook>=4.4.1->widgetsnbextension~=3.2.0->ipywidgets>=7.0.0->gmaps) (0.8.1)
+Requirement already satisfied: MarkupSafe>=0.23 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from                                                                                                                                            jinja2->notebook>=4.4.1->widgetsnbextension~=3.2.0->ipywidgets>=7.0.0->gmaps) (1.0)
+Requirement already satisfied: mistune>=0.7.4 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from nb                                                                                                                                           convert->notebook>=4.4.1->widgetsnbextension~=3.2.0->ipywidgets>=7.0.0->gmaps) (0.8.3)
+Requirement already satisfied: entrypoints>=0.2.2 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (fro                                                                                                                                           m nbconvert->notebook>=4.4.1->widgetsnbextension~=3.2.0->ipywidgets>=7.0.0->gmaps) (0.2.3)
+Requirement already satisfied: bleach in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from nbconvert-                                                                                                                                           >notebook>=4.4.1->widgetsnbextension~=3.2.0->ipywidgets>=7.0.0->gmaps) (2.1.3)
+Requirement already satisfied: pandocfilters>=1.4.1 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (f                                                                                                                                           rom nbconvert->notebook>=4.4.1->widgetsnbextension~=3.2.0->ipywidgets>=7.0.0->gmaps) (1.4.2)
+Requirement already satisfied: testpath in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from nbconver                                                                                                                                           t->notebook>=4.4.1->widgetsnbextension~=3.2.0->ipywidgets>=7.0.0->gmaps) (0.3.1)
+Requirement already satisfied: html5lib!=1.0b1,!=1.0b2,!=1.0b3,!=1.0b4,!=1.0b5,!=1.0b6,!=1.0b7,!=1.0b8,>=0.99999999pre in c:\users\p                                                                                                                                           atti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from bleach->nbconvert->notebook>=4.4.1->widgetsnbextension~=3.2.0                                                                                                                                           ->ipywidgets>=7.0.0->gmaps) (1.0.1)
+Requirement already satisfied: webencodings in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from html                                                                                                                                           5lib!=1.0b1,!=1.0b2,!=1.0b3,!=1.0b4,!=1.0b5,!=1.0b6,!=1.0b7,!=1.0b8,>=0.99999999pre->bleach->nbconvert->notebook>=4.4.1->widgetsnbex                                                                                                                                           tension~=3.2.0->ipywidgets>=7.0.0->gmaps) (0.5.1)
+Building wheels for collected packages: gmaps
+  Running setup.py bdist_wheel for gmaps: started
+  Running setup.py bdist_wheel for gmaps: finished with status 'done'
+  Stored in directory: C:\Users\patti\AppData\Local\pip\Cache\wheels\03\25\cd\097e0f11523a7a214390fcc056e68d45611bfe465be6c84d33
+Successfully built gmaps
+distributed 1.21.8 requires msgpack, which is not installed.
+Installing collected packages: geojson, gmaps
+Successfully installed geojson-2.4.0 gmaps-0.8.0
+You are using pip version 10.0.1, however version 18.0 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+(PythonData)
+patti@DESKTOP-H1UNS1E MINGW64 ~ (master)
+$ pip install ipywidgets
+Requirement already satisfied: ipywidgets in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (7.2.1)
+Requirement already satisfied: ipykernel>=4.5.1 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from                                                                                                                                            ipywidgets) (4.8.2)
+Requirement already satisfied: traitlets>=4.3.1 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from                                                                                                                                            ipywidgets) (4.3.2)
+Requirement already satisfied: nbformat>=4.2.0 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from i                                                                                                                                           pywidgets) (4.4.0)
+Requirement already satisfied: widgetsnbextension~=3.2.0 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packag                                                                                                                                           es (from ipywidgets) (3.2.1)
+Requirement already satisfied: ipython>=4.0.0 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from ip                                                                                                                                           ywidgets) (6.4.0)
+Requirement already satisfied: jupyter_client in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from ip                                                                                                                                           ykernel>=4.5.1->ipywidgets) (5.2.3)
+Requirement already satisfied: tornado>=4.0 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from ipyk                                                                                                                                           ernel>=4.5.1->ipywidgets) (5.0.2)
+Requirement already satisfied: ipython_genutils in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from                                                                                                                                            traitlets>=4.3.1->ipywidgets) (0.2.0)
+Requirement already satisfied: six in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from traitlets>=4.                                                                                                                                           3.1->ipywidgets) (1.11.0)
+Requirement already satisfied: decorator in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from traitle                                                                                                                                           ts>=4.3.1->ipywidgets) (4.3.0)
+Requirement already satisfied: jsonschema!=2.5.0,>=2.4 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages                                                                                                                                            (from nbformat>=4.2.0->ipywidgets) (2.6.0)
+Requirement already satisfied: jupyter_core in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from nbfo                                                                                                                                           rmat>=4.2.0->ipywidgets) (4.4.0)
+Requirement already satisfied: notebook>=4.4.1 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from w                                                                                                                                           idgetsnbextension~=3.2.0->ipywidgets) (5.5.0)
+Requirement already satisfied: colorama; sys_platform == "win32" in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\sit                                                                                                                                           e-packages (from ipython>=4.0.0->ipywidgets) (0.3.9)
+Requirement already satisfied: pickleshare in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from ipyth                                                                                                                                           on>=4.0.0->ipywidgets) (0.7.4)
+Requirement already satisfied: jedi>=0.10 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from ipytho                                                                                                                                           n>=4.0.0->ipywidgets) (0.12.0)
+Requirement already satisfied: prompt-toolkit<2.0.0,>=1.0.15 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-pa                                                                                                                                           ckages (from ipython>=4.0.0->ipywidgets) (1.0.15)
+Requirement already satisfied: setuptools>=18.5 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from                                                                                                                                            ipython>=4.0.0->ipywidgets) (39.1.0)
+Requirement already satisfied: backcall in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from ipython>                                                                                                                                           =4.0.0->ipywidgets) (0.1.0)
+Requirement already satisfied: simplegeneric>0.8 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from                                                                                                                                            ipython>=4.0.0->ipywidgets) (0.8.1)
+Requirement already satisfied: pygments in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from ipython>                                                                                                                                           =4.0.0->ipywidgets) (2.2.0)
+Requirement already satisfied: pyzmq>=13 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from jupyter                                                                                                                                           _client->ipykernel>=4.5.1->ipywidgets) (17.0.0)
+Requirement already satisfied: python-dateutil>=2.1 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (f                                                                                                                                           rom jupyter_client->ipykernel>=4.5.1->ipywidgets) (2.7.3)
+Requirement already satisfied: terminado>=0.8.1 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from                                                                                                                                            notebook>=4.4.1->widgetsnbextension~=3.2.0->ipywidgets) (0.8.1)
+Requirement already satisfied: jinja2 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from notebook>=                                                                                                                                           4.4.1->widgetsnbextension~=3.2.0->ipywidgets) (2.10)
+Requirement already satisfied: Send2Trash in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from notebo                                                                                                                                           ok>=4.4.1->widgetsnbextension~=3.2.0->ipywidgets) (1.5.0)
+Requirement already satisfied: nbconvert in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from noteboo                                                                                                                                           k>=4.4.1->widgetsnbextension~=3.2.0->ipywidgets) (5.3.1)
+Requirement already satisfied: parso>=0.2.0 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from jedi                                                                                                                                           >=0.10->ipython>=4.0.0->ipywidgets) (0.2.0)
+Requirement already satisfied: wcwidth in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from prompt-to                                                                                                                                           olkit<2.0.0,>=1.0.15->ipython>=4.0.0->ipywidgets) (0.1.7)
+Requirement already satisfied: MarkupSafe>=0.23 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from                                                                                                                                            jinja2->notebook>=4.4.1->widgetsnbextension~=3.2.0->ipywidgets) (1.0)
+Requirement already satisfied: mistune>=0.7.4 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from nb                                                                                                                                           convert->notebook>=4.4.1->widgetsnbextension~=3.2.0->ipywidgets) (0.8.3)
+Requirement already satisfied: entrypoints>=0.2.2 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (fro                                                                                                                                           m nbconvert->notebook>=4.4.1->widgetsnbextension~=3.2.0->ipywidgets) (0.2.3)
+Requirement already satisfied: bleach in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from nbconvert-                                                                                                                                           >notebook>=4.4.1->widgetsnbextension~=3.2.0->ipywidgets) (2.1.3)
+Requirement already satisfied: pandocfilters>=1.4.1 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (f                                                                                                                                           rom nbconvert->notebook>=4.4.1->widgetsnbextension~=3.2.0->ipywidgets) (1.4.2)
+Requirement already satisfied: testpath in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from nbconver                                                                                                                                           t->notebook>=4.4.1->widgetsnbextension~=3.2.0->ipywidgets) (0.3.1)
+Requirement already satisfied: html5lib!=1.0b1,!=1.0b2,!=1.0b3,!=1.0b4,!=1.0b5,!=1.0b6,!=1.0b7,!=1.0b8,>=0.99999999pre in c:\users\p                                                                                                                                           atti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from bleach->nbconvert->notebook>=4.4.1->widgetsnbextension~=3.2.0                                                                                                                                           ->ipywidgets) (1.0.1)
+Requirement already satisfied: webencodings in c:\users\patti\appdata\local\conda\conda\envs\pythondata\lib\site-packages (from html                                                                                                                                           5lib!=1.0b1,!=1.0b2,!=1.0b3,!=1.0b4,!=1.0b5,!=1.0b6,!=1.0b7,!=1.0b8,>=0.99999999pre->bleach->nbconvert->notebook>=4.4.1->widgetsnbex                                                                                                                                           tension~=3.2.0->ipywidgets) (0.5.1)
+distributed 1.21.8 requires msgpack, which is not installed.
+You are using pip version 10.0.1, however version 18.0 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+(PythonData)
+patti@DESKTOP-H1UNS1E MINGW64 ~ (master)
+$ upyter nbextension enable --py widgetsnbextension --sys-prefix
+bash: upyter: command not found
+(PythonData)
+patti@DESKTOP-H1UNS1E MINGW64 ~ (master)
+$ upyter nbextension enable --py widgetsnbextension --sys-prefix
+bash: upyter: command not found
+(PythonData)
+patti@DESKTOP-H1UNS1E MINGW64 ~ (master)
+$ jupyter nbextension enable --py widgetsnbextension --sys-prefix
+Enabling notebook extension jupyter-js-widgets/extension...
+      - Validating: ok
+(PythonData)
+patti@DESKTOP-H1UNS1E MINGW64 ~ (master)
+$ jupyter nbextension enable --py --sys-prefix gmaps
+Enabling notebook extension jupyter-gmaps/extension...
+      - Validating: ok
+(PythonData)
+patti@DESKTOP-H1UNS1E MINGW64 ~ (master)
+$ pip install census
+Collecting census
+  Downloading https://files.pythonhosted.org/packages/52/af/ad681b4a1b903d96569a4295305ef3bb17d99959a15a4d                                                                                                                                                                     7cd4f6f65e8f3a/census-0.8.7-py2.py3-none-any.whl
+Collecting future (from census)
+  Downloading https://files.pythonhosted.org/packages/00/2b/8d082ddfed935f3608cc61140df6dcbf0edea1bc3ab52f                                                                                                                                                                     b6c29ae3e81e85/future-0.16.0.tar.gz (824kB)
+Requirement already satisfied: requests>=1.1.0 in c:\users\patti\appdata\local\conda\conda\envs\pythondata                                                                                                                                                                     \lib\site-packages (from census) (2.18.4)
+Requirement already satisfied: chardet<3.1.0,>=3.0.2 in c:\users\patti\appdata\local\conda\conda\envs\pyth                                                                                                                                                                     ondata\lib\site-packages (from requests>=1.1.0->census) (3.0.4)
+Requirement already satisfied: idna<2.7,>=2.5 in c:\users\patti\appdata\local\conda\conda\envs\pythondata\                                                                                                                                                                     lib\site-packages (from requests>=1.1.0->census) (2.6)
+Requirement already satisfied: urllib3<1.23,>=1.21.1 in c:\users\patti\appdata\local\conda\conda\envs\pyth                                                                                                                                                                     ondata\lib\site-packages (from requests>=1.1.0->census) (1.22)
+Requirement already satisfied: certifi>=2017.4.17 in c:\users\patti\appdata\local\conda\conda\envs\pythond                                                                                                                                                                     ata\lib\site-packages (from requests>=1.1.0->census) (2018.4.16)
+Building wheels for collected packages: future
+  Running setup.py bdist_wheel for future: started
+  Running setup.py bdist_wheel for future: finished with status 'done'
+  Stored in directory: C:\Users\patti\AppData\Local\pip\Cache\wheels\bf\c9\a3\c538d90ef17cf7823fa51fc701a7                                                                                                                                                                     a7a910a80f6a405bf15b1a
+Successfully built future
+distributed 1.21.8 requires msgpack, which is not installed.
+Installing collected packages: future, census
+Successfully installed census-0.8.7 future-0.16.0
+You are using pip version 10.0.1, however version 18.0 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+(PythonData)
+patti@DESKTOP-H1UNS1E MINGW64 ~ (master)
+$ pip install us
+Collecting us
+  Downloading https://files.pythonhosted.org/packages/72/83/8731cbf5afcf3434c0b24cfc520c11fd27bfc8a6878114                                                                                                                                                                     662f4e3dbdab71/us-1.0.0.tar.gz
+Collecting jellyfish==0.5.6 (from us)
+  Downloading https://files.pythonhosted.org/packages/94/48/ddb1458d966f0a84e472d059d87a9d1527df7768a72513                                                                                                                                                                     2fc1d810728386/jellyfish-0.5.6.tar.gz (132kB)
+Building wheels for collected packages: us, jellyfish
+  Running setup.py bdist_wheel for us: started
+  Running setup.py bdist_wheel for us: finished with status 'done'
+  Stored in directory: C:\Users\patti\AppData\Local\pip\Cache\wheels\b3\98\40\cb8be35d7779a0ae4372c84e7a58                                                                                                                                                                     5c947bfc41540fd8999e53
+  Running setup.py bdist_wheel for jellyfish: started
+  Running setup.py bdist_wheel for jellyfish: finished with status 'done'
+  Stored in directory: C:\Users\patti\AppData\Local\pip\Cache\wheels\3b\29\06\8d686d24f742cb89e7bde7f26f18                                                                                                                                                                     cb9e89b3c8bcd6999cb12a
+Successfully built us jellyfish
+distributed 1.21.8 requires msgpack, which is not installed.
+Installing collected packages: jellyfish, us
+Successfully installed jellyfish-0.5.6 us-1.0.0
+You are using pip version 10.0.1, however version 18.0 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+(PythonData)
+patti@DESKTOP-H1UNS1E MINGW64 ~ (master)
+$ python -m pip install --upgrade pip
+Collecting pip
+  Downloading https://files.pythonhosted.org/packages/5f/25/e52d3f31441505a5f3af41213346e5b6c221c9e086a166                                                                                                                                                                     f3703d2ddaf940/pip-18.0-py2.py3-none-any.whl (1.3MB)
+distributed 1.21.8 requires msgpack, which is not installed.
+Installing collected packages: pip
+  Found existing installation: pip 10.0.1
+    Uninstalling pip-10.0.1:
+      Successfully uninstalled pip-10.0.1
+Successfully installed pip-18.0
+(PythonData)
+patti@DESKTOP-H1UNS1E MINGW64 ~ (master)
+$ jupyter notebook
+[I 18:49:49.338 NotebookApp] The port 8888 is already in use, trying another port.
+[I 18:49:50.197 NotebookApp] JupyterLab beta preview extension loaded from C:\Users\patti\AppData\Local\co                                                                                                                                                                     nda\conda\envs\PythonData\lib\site-packages\jupyterlab
+[I 18:49:50.197 NotebookApp] JupyterLab application directory is C:\Users\patti\AppData\Local\conda\conda\                                                                                                                                                                     envs\PythonData\share\jupyter\lab
+[I 18:49:50.413 NotebookApp] Serving notebooks from local directory: C:\Users\patti
+[I 18:49:50.413 NotebookApp] 0 active kernels
+[I 18:49:50.413 NotebookApp] The Jupyter Notebook is running at:
+[I 18:49:50.413 NotebookApp] http://localhost:8889/?token=d75faa011e5b78fd8275f1cf929c0e4f3e2c994ae4d1e465
+[I 18:49:50.413 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip co                                                                                                                                                                     nfirmation).
+[C 18:49:50.413 NotebookApp]
+
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://localhost:8889/?token=d75faa011e5b78fd8275f1cf929c0e4f3e2c994ae4d1e465&token=d75faa011e5b78                                                                                                                                                                     fd8275f1cf929c0e4f3e2c994ae4d1e465
+[I 18:49:50.714 NotebookApp] Accepting one-time-token-authenticated connection from ::1
+[I 17:18:25.417 NotebookApp] Interrupted...
+[I 17:18:25.417 NotebookApp] Shutting down 0 kernels
+(PythonData)
+patti@DESKTOP-H1UNS1E MINGW64 ~ (master)
