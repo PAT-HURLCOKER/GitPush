@@ -1,0 +1,65 @@
+
+/* navbar padding and background color */
+
+  /* navbar li's inline-block elements */
+  .navbar li 
+    {
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+    }
+
+  
+  /* navbar default link styles */
+  .navbar li a 
+    {
+     text-decoration: none;
+    }
+
+  
+  /* navbar .post element margin on 3 sides */
+  .post 
+    {
+    margin-top: 50px;
+    margin-right: 100px;
+    margin-left: 100px;
+    }
+
+  
+  #nav-select 
+    {
+    visibility: hidden;
+    }
+
+  
+  /* - NO (media queries to show the drop-down) hides the navbar when the screen is < 480 pixels */
+
+  @media (max-width: 480px) 
+    {
+    .navbar li {
+      padding: 10px;
+    }
+
+  
+    .post 
+    {
+      margin-right: 30px;
+      margin-left: 30px;
+    }
+
+  
+    .navbar ul 
+    {
+      visibility: hidden;
+    }
+
+  
+
+    #nav-select 
+    {
+      visibility: visible;
+    }
+
+  }
+
+  
