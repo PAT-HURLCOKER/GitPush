@@ -1,0 +1,63 @@
+body {
+
+  background: rgb(120, 247, 215);
+
+}
+
+
+
+h1{text-align: center;
+
+   width: 100%;
+
+}
+
+
+
+h6{text-align: center;
+
+   width: 100%;}
+
+
+
+.jumbotron {
+
+    text-align: center;
+
+    background-color: rgb(4, 19, 61);
+
+    min-height: 75px;
+
+}
+
+
+
+#pie {
+
+    width: 80%;
+
+    height: 80%;
+
+}
+
+
+
+#gauge {
+
+    width: 80%;
+
+    height: 80%;
+
+}
+
+
+
+#bubble {
+
+    text-align: center;
+
+    width: 80%;
+
+    height: 80%;
+
+}
